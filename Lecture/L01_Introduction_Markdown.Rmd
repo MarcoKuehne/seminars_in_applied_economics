@@ -1,0 +1,168 @@
+---
+title: "Introduction to Markdown"
+author: "Marco Kühne"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: html_document
+---
+
+## R Markdown
+
+A fresh markdown document is not empty. You can enter a title and author (may change this later) and an output format (choose **html**, may change this later). Have a look at what is there. You might **knit** your new minimal document to see if everything is working as expected (you can find that button on your own). Since the minimal template is provided by RStudio there should not be any problem with the code. 
+
+## R Code Chunks
+
+Please code a simple math operation.
+
+```{r }
+# Your math operation goes here
+
+```
+
+Please define a variable:
+
+```{r }
+# Your variable goes here
+
+```
+
+## Data: A Static Table Preview
+
+Read in the data set called `GF_2020.csv` from the Github repository <https://github.com/MarcoKuehne/seminars_in_applied_economics>, using the `read.csv()` command, call it `CourseData2020`. Use the `head()` function on `CourseData2020` in the same code chunk. The output is static and hard to read.
+
+```{r }
+# Your data goes here
+CourseData2020 <- read.csv("https://raw.githubusercontent.com/MarcoKuehne/seminars_in_applied_economics/main/Data/GF_2021.csv")
+head(CourseData2020)
+```
+
+## Data: A Dynamic Perspective 
+
+Start a new code chunk. Please install and load the `DT` package (data table). Use `datatable` command on `CourseData2020`. It makes the data dynamic. Modify the `datable()` command by applying the `colnames()` argument and setting it to `c("Level", "Gender", "Age", "Semester", "Stats", "R", "Writing", "Expectations")` (making column names shorter). Furthermore, use `options = list(pageLength = 5)` to reduce the default number of rows to 5. 
+
+```{r }
+library(DT)
+
+datatable(CourseData2020, 
+          colnames = c("Level", "Gender", "Age", "Semester", "Stats", "R", "Writing", "Expectations"),
+          options = list(pageLength = 5))
+```
+
+## Images: Static 
+
+You can insert a static or dynamic image from the web or your local machine directly in the markdown without using a code chunk. Use the complete path of the image like this `![label](path)`
+
+<center>
+
+![https://en.wikipedia.org/wiki/Internet_meme](https://upload.wikimedia.org/wikipedia/commons/9/9e/Wikipedia_meme_vector_version.svg){width=50%}
+</center>
+
+## Images: Dynamic 
+
+HTML can handle dynamic gifs. You can use the same code as above. 
+
+<center>
+
+![https://en.wikipedia.org/wiki/GIF](https://upload.wikimedia.org/wikipedia/commons/d/d3/Newtons_cradle_animation_book_2.gif){width=50%}
+
+</center>
+
+# Funny Packages 
+
+Different functionality can be used in different markdown output formats. PDF can store static tables and images. HTML can store dynamic tables, figures and images. There are some feature that only make sense inside of RStudio, e.g. sounds or games. 
+
+### BeepR 
+
+Install and load the `beepr` package. The command `beep()` does not make sense in a markdown document. Listen to  `beep(5)` by typing it in the console. Check out the documentation of `beep()` to find out about alternative sounds. Please print the `class()` of `beep(5)`.
+
+```{r beepr, eval=F}
+library(beepr)
+class(beep(5))
+```
+
+### Cowsay
+
+Install and load the `cowsay` package. It offers sling messages and warnings with flair. Either use the following code or change it according to your needs. This codes result can be shown in HTML.
+
+```{r cowsay, eval=F}
+library(cowsay)
+say(what = "Jestem kotem. Ja pije mleko.", by = "cat")
+```
+
+### Fun
+
+Install and load the `fun` package. Use `mine_sweeper()` in the console. Where does the game appear? Use `alzheimer_test()` in the console. Where does the game appear? 
+
+<!-- https://stackoverflow.com/questions/23692236/is-it-possible-to-configure-r-graphics-event-handling-on-osx-with-rstudio/23692521 -->
+<!-- X11(type="Xlib") -->
+
+```{r fun, eval = F}
+library(fun)
+alzheimer_test(nr = 5, nc=5)
+mine_sweeper()
+```
+
+
+# Options in Code Chunks (The Racoon)
+
+Copy paste this code in a code chunk and see what happens when you knit the document. You plot an image from data in R language. In order to center the plot, use `fig.align = 'center'`. You are not interested in this particular code snippet. You only want to see racoons. Use `echo = FALSE` in order to suppress the code. Same goes for `warnings = FALSE` and `message=FALSE`. Hint: Find detailed information on how to use R markdown code chunks here <https://www.earthdatascience.org/courses/earth-analytics/document-your-science/rmarkdown-code-chunks-comments-knitr/>.
+
+```{r figure-fun, fig.align = 'center', warnings=FALSE, message=FALSE, eval=F, echo=T}
+# code comes from this post on stackoverflow:
+# https://stackoverflow.com/questions/9917049/inserting-an-image-to-ggplot2
+
+library(ggplot2)
+library(cowplot)
+library(magick)
+
+theme_set(theme_cowplot())
+
+my_plot <-
+  ggplot(data    = iris,
+         mapping = aes(x    = Sepal.Length,
+                       fill = Species)) +
+  geom_density(alpha = 0.7)
+
+ggdraw() +
+  draw_image("https://i.stack.imgur.com/WDOo4.jpg?s=328&g=1") +
+  draw_plot(my_plot)
+```
+
+# Interactive Pokemon Plot
+<!-- https://rstudio-pubs-static.s3.amazonaws.com/457806_1025894a8c71494da547ef2d714bdbee.html -->
+<!-- https://rpubs.com/Adrian-Ver/457811 -->
+
+One might be interested in plotting the special attacks and special defense stats of all Pokemon, along with their primary type, while at the same time showing helpful information upon hovering on certain points.
+
+Please install and load the packages `ggplot2` and `plotly`. `plotly` is a package that makes visualizations interactive. Copy paste the following code in a new code chunk. Set `echo = FALSE, warnings = FALSE, message=FALSE` in order to plot the result, but hide the code.  
+
+```{r interactive-plot, echo = T, warnings = FALSE, message=FALSE, eval=F, fig.align = 'center'}
+library(ggplot2)
+library(plotly)
+
+pokemon <- read.csv("https://gist.githubusercontent.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6/raw/92200bc0a673d5ce2110aaad4544ed6c4010f687/pokemon.csv")
+
+p <- ggplot(pokemon, aes(text = paste("name:", Name), color = Type.1,
+                          x = Sp..Atk,  y = Sp..Def)) +
+    geom_point(alpha = 0.5) +
+    theme_bw() +
+    labs(title = "Attacks and Defense Stats Across Primary Types",
+         x = "Special Attack", y = "Special Defense", color = "Primary Type") 
+
+ggplotly(p = ggplot2::last_plot())
+```
+
+Hover with the cursor over the graph. Each point is labeled with values for defense and attack, name and first type of the pokemon. Look at the left upper corner. Which pokemon has the highest special defense value?
+
+# Memes are coming
+
+<center>
+![](http://www.quickmeme.com/img/0f/0f1bdf299e7f3149505d3008cacb23af17403853f49fa9aa74eee1e2260f4fde.jpg){width=50%}
+</center>
+
+
+
+
+
+
+
+
