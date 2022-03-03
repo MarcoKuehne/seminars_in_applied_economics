@@ -1,8 +1,8 @@
 # Becoming Fluent in Data (2022)
 
-The Seminar in Applied Economicsis is about empirical analysis of questionnaire data (SOEP) to answer questions from the field of happiness research and labour market discrimination. Analysis is conducted with help of the statistical package R and results are reported in an R Markdown. This course teaches  critical, statistical thinking based on complex rectangular panel data. Participants will become data fluent and learn major skills that they can use in their academic and business career.
+The *Seminar in Applied Economics* 2022 is all about data. *Becoming Fluent in Data* teaches what data is, where it can be found and what can be done with it. We explore various sources and types of data. We collect and create data on our own, conduct field research, surveys and experiments. We will download data from various sources. A lot of data is free. Last but not least, we have fun with data. 
 
-This repository contains data and ideas collected in this seminar series. 
+This repository contains data and material collected in this seminar series. 
 
 Homepage: http://seminars-in-applied-economics.de/
 
@@ -12,9 +12,11 @@ TBA ...
 
 # Setup 
 
-Please install R, RStudio & Git locally on your laptop. Part of day 1 will be devoted to ensuring people's instances work correctly.
+Please install R, RStudio & Git locally on your laptop. Follow the setup guide:
 
-If you encounter any errors during set up don't worry! Please request technical help from Marco. 
+https://github.com/MarcoKuehne/seminars_in_applied_economics/blob/main/Setup.pdf
+
+Part of day 1 will be devoted to ensuring people's instances work correctly. If you encounter any errors during set up don't worry! Please request technical help from Marco. 
 
 # R packages
 
