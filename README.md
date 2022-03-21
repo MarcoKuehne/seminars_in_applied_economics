@@ -8,7 +8,7 @@ Homepage: http://seminars-in-applied-economics.de/
 
 # Welcome Video
 
-TBA ...
+[![Welcome](https://i.pinimg.com/originals/34/af/16/34af16797fd08aefb9d243740c3798cb.png)](https://youtu.be/T4YRu4JrQyc)
 
 # Setup 
 
