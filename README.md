@@ -6,7 +6,7 @@ This repository contains data and material collected in this seminar series.
 
 # Welcome Video
 
-[![Welcome](https://i.pinimg.com/originals/34/af/16/34af16797fd08aefb9d243740c3798cb.png)](https://youtu.be/T4YRu4JrQyc)
+https://github.com/MarcoKuehne/seminars_in_applied_economics/blob/main/Becoming_Fluent_In_Data_Intro.mp4
 
 # Setup 
 
