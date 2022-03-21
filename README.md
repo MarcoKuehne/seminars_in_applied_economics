@@ -11,19 +11,19 @@ https://user-images.githubusercontent.com/68418162/159294084-76c15b2e-9891-48c7-
 # Schedule
 
 |Date  | Meeting              |  Assignment             | 
-:-----------------------------|------------------------:|
+|:-----|----------------------|:------------------------|
 |21.04.|L01 Introduction      | R00 Setup               |   
 |28.04.|L02 R and R Markdown  | R01 Introduction to R   |   
 |05.05.|L03 Group Comparison  | R02 Group Comparison    |  
-|12.05.|                      | R03 Mean Comparison     |  
-|19.05.|                      | R04 Panel Data          |   
+|12.05.|L04                      | R03 Mean Comparison     |  
+|19.05.|L05                      | R04 Panel Data          |   
 |26.05.| XXX                  | R05 Text Mining         |  
 |02.06.|L06                   | R06 Data Scraping       |   
-|07.06.--10.06.|Exam Week     | |   
-|16.06.|L07 Correlation       | | 
-|23.06.|L08 Linear Regression | R07 Covariance + Correlation | 
-|30.06.| XXX                  | R08 Linear Regression   |   
-|07.07.|L09 Logistic Regression      | R09 Logistic Regression   
+|Exam Week|Exam Week     |   Exam Week             |   
+|16.06.|L07 Correlation       |                                | 
+|23.06.|L08 Linear Regression | R07 Covariance + Correlation   | 
+|30.06.| XXX                  | R08 Linear Regression          |   
+|07.07.|L09 Logistic Regression      | R09 Logistic Regression |
 |14.07.|L10 Interaction Models       | R10 Interaction + ME |   
 |21.07.|L11 Fixed Effects Regression | R11 Fixed Effects 01 |   
 |28.07.|L12 XXX                      | R12 Fixed Effects 02 |  
