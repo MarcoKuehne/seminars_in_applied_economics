@@ -10,23 +10,23 @@ https://user-images.githubusercontent.com/68418162/159294084-76c15b2e-9891-48c7-
 
 # Schedule
 
-|Date  | Meeting              |  Assignment             | 
-|:-----|----------------------|:------------------------|
-|21.04.|L01 Introduction      | R00 Setup               |   
-|28.04.|L02 R and R Markdown  | R01 Introduction to R   |   
-|05.05.|L03 Group Comparison  | R02 Group Comparison    |  
-|12.05.|L04 Panel Data        | R03 Mean Comparison     |  
-|19.05.|L05 RCT & Causality   | R04 Panel Data          |   
-|26.05.|Holiday               | R05 RCT                 |  
-|02.06.|L06 Field Trip        | R06 Data Scraping       |   
-|Exam Week|Exam Week          |   Exam Week             |   
-|16.06.|L07 Correlation       |                                | 
-|23.06.|L08 Linear Regression | R07 Covariance + Correlation   | 
-|30.06.|No meeting            | R08 Linear Regression          |   
-|07.07.|L09 Interaction Models       | R09 Logistic Regression |
-|14.07.|L10 Fixed Effects Regression | R10 Interaction + ME |   
-|21.07.|L11 Fixed Effects Regression | R11 Fixed Effects 01 |   
-|28.07.|L12 Wrap Up                  | R12 Fixed Effects 02 |  
+|Date  |  Assignment             | Date  | Meeting              |
+|:-----|:-----|----------------------|:-------------------------|
+|20.04.|R00 Setup               |  21.04.|L01 Introduction      |  
+|27.04.|R01 Introduction to R   |  28.04.|L02 R and R Markdown  | 
+|04.05.|R02 Group Comparison    |  05.05.|L03 Group Comparison  | 
+|11.05.|R03 Mean Comparison     |  12.05.|L04 Panel Data        | 
+|18.05.|R04 Panel Data          |  19.05.|L05 RCT & Causality   | 
+|25.05.|R05 RCT                 |  26.05.|No meeting (Holiday)  | 
+|01.06.|R06 Data Scraping       |  02.06.|L06 Field Trip        |
+|Exam Week|Exam Week|Exam Week  |  Exam Week                    |   
+|15.06.|                        |  16.06.|L07 Text Mining       | 
+|22.06.|R07 Text Mining         |  23.06.|L08 Relationships     | 
+|29.06.|R08 Relationships       |  30.06.|No meeting            |  
+|06.07.|R09 Linear Regression   |  07.07.|L09 Logistic Regression | 
+|13.07.|R10 Logistic Regression |  14.07.|L10 Interaction Models  | 
+|20.07.|R11 Interaction + ME    |  21.07.|L11 Fixed Effects Regression |  
+|27.07.|R12 Fixed Effects       |  28.07.|L12 Wrap Up                  | 
 
 # Setup 
 
