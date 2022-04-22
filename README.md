@@ -2,11 +2,25 @@
 
 The *Seminar in Applied Economics* 2022 is all about data. *Becoming Fluent in Data* teaches what data is, where it can be found and what can be done with it. We explore various sources and types of data. We collect and create data on our own, conduct field research, surveys and experiments. We will download data from various sources. A lot of data is free. Last but not least, we have fun with data. 
 
-This repository contains data and material collected in this seminar series. 
-
 # Welcome Video
 
 https://user-images.githubusercontent.com/68418162/159294084-76c15b2e-9891-48c7-8813-ec87690f4425.mp4
+
+# GitHub Repo
+
+This repository contains data and material collected in this seminar series. 
+
+### Data
+
+The *Data* folder contains datasets that we use. Using an absolute path to a web resource prevents problems with different local paths.
+
+### Assignments
+
+The *Exercises* folder contains an up-to-date version of the weekly home assignments. Upload your solutions (as .html file) on Microsoft Teams. 
+
+### Lecture
+
+The *Lecture* folder contains lecture slides, templates and course material that is for your interest. The material will help you solving the assignments.
 
 # Schedule
 
@@ -53,4 +67,6 @@ install.packages('tidyverse')
 # Or using base functions use a nested `c()`
 install.packages(c("fun", "beepr", "cowsay"))
 ```
+
+
 
