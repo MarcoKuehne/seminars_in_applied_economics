@@ -16,7 +16,7 @@ The *Data* folder contains datasets that we use. Using an absolute path to a web
 
 ### Assignments
 
-The *Exercises* folder contains an up-to-date version of the weekly home assignments. Upload your solutions (as .html file) on Microsoft Teams. 
+The *Exercises* folder contains an up-to-date version of the weekly home assignments. Upload your solutions (as .R or .Rmd and .html file) on Microsoft Teams. 
 
 ### Lecture
 
