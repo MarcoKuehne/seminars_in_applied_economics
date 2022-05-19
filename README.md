@@ -30,12 +30,12 @@ The *Lecture* folder contains lecture slides, templates and course material that
 |27.04.|R01 Introduction to R   |  28.04.|L02 R and R Markdown  | 
 |04.05.|R02 Group Comparison    |  05.05.|L03 Group Comparison  | 
 |11.05.|R03 Mean Comparison     |  12.05.|L04 Panel Data        | 
-|18.05.|R04 Panel Data          |  19.05.|L05 RCT & Causality   | 
-|25.05.|R05 RCT                 |  26.05.|No meeting (Holiday)  | 
+|18.05.|R04 Panel Data          |  19.05.|L05 Textmining & API  | 
+|25.05.|R05 Textmining          |  26.05.|No meeting (Holiday)  | 
 |01.06.|R06 Data Scraping       |  02.06.|L06 Field Trip        |
 |Exam Week|Exam Week|Exam Week  |  Exam Week                    |   
 |15.06.|                        |  16.06.|L07 Text Mining       | 
-|22.06.|R07 Text Mining         |  23.06.|L08 Relationships     | 
+|22.06.|R07                     |  23.06.|L08 Relationships     | 
 |29.06.|R08 Relationships       |  30.06.|No meeting            |  
 |06.07.|R09 Linear Regression   |  07.07.|L09 Logistic Regression | 
 |13.07.|R10 Logistic Regression |  14.07.|L10 Interaction Models  | 
